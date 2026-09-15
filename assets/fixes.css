@@ -1,0 +1,14 @@
+.layout-choices {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.layout-choice {
+  justify-content: center;
+  gap: 5px;
+  padding-inline: 6px;
+}
+
+.layout-choice > span:last-child {
+  min-width: 0;
+  white-space: nowrap;
+}
