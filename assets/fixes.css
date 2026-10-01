@@ -1,14 +1,12 @@
-.layout-choices {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1fr);
-}
-
-.layout-choice {
-  justify-content: center;
-  gap: 5px;
-  padding-inline: 6px;
-}
-
-.layout-choice > span:last-child {
-  min-width: 0;
-  white-space: nowrap;
-}
+/* Four sign types remain readable in the narrow editing panel. */
+.layout-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.layout-choice { justify-content: center; gap: 6px; padding-inline: 8px; }
+.layout-choice > span:last-child { min-width: 0; white-space: nowrap; }
+.format-icon.sheet-icon { flex-shrink: 0; width: 32px; height: 36px; }
+.format-option > span:nth-child(2) { min-width: 0; }
+.uniform-controls { margin-top: 16px; }
+.uniform-controls textarea { width: 100%; min-height: 175px; }
+.uniform-size-label { margin-top: 16px; }
+.uniform-size { display: grid; grid-template-columns: minmax(0, 1fr) 76px; align-items: center; gap: 12px; }
+.uniform-size input[type="range"] { padding: 0; width: 100%; accent-color: #3d5980; }
+.uniform-size input[type="number"] { padding: 8px; width: 100%; text-align: center; }
