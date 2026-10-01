@@ -11,7 +11,7 @@ const modules = new Map();
 async function load(filename) {
   if (modules.has(filename)) return modules.get(filename);
   let src = fs.readFileSync(filename, 'utf8');
-  if (filename.endsWith('index-9lheFqiV.js')) {
+  if (filename.endsWith('index-skyltstudion-v6.js')) {
     src = src.replace('(0,D.createRoot)(document.getElementById(`root`)).render((0,X.jsx)(tp,{}));', '');
     src += '\nexport {I as defaults,G as normalize,z as parseFont,le as sheet,ce as render,ue as svg,de as pdf,ne as validate,tp as App,T as React,X as JSX};';
   }
@@ -26,7 +26,7 @@ function treeNodes(tree) {
   return [tree, ...treeNodes(tree.props?.children)];
 }
 (async () => {
-  const m = await load(root + '/index-9lheFqiV.js'); await m.evaluate(); const app = m.namespace;
+  const m = await load(root + '/index-skyltstudion-v6.js'); await m.evaluate(); const app = m.namespace;
   const updates = modules.get(root + '/studio-updates.js').namespace;
   const bytes = fs.readFileSync(root + '/cooper-black.ttf');
   const font = app.parseFont(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength));
@@ -51,7 +51,7 @@ function treeNodes(tree) {
       assert(!svg.includes('NaN')); assert(!svg.includes('<text')); assert(!svg.includes('<image')); // Fully outlined, self-contained output.
       if (mode === 'standard') assert.equal(svg, app.svg(app.sheet(font, {...sign, price: '49:90'}, format, true)), 'Comma and colon prices must match');
       const pdfBytes = await app.pdf(scene);
-      const pdfLib = modules.get(root + '/es-CWV_EnfY.js').namespace;
+      const pdfLib = modules.get(root + '/es-skyltstudion-v6.js').namespace;
       const pdf = await pdfLib.PDFDocument.load(pdfBytes);
       assert.equal(pdf.getPageCount(), 1, 'Only one PDF page');
       const size = pdf.getPage(0).getSize();

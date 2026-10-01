@@ -6,6 +6,8 @@
 
 Jordnäras interna skyltstudio – ett byggt webbverktyg för att skapa skyltar.
 
+https://jordnara.se/skyltstudion/
+
 ## Innehåll
 
 - `index.html` – startsida
@@ -25,7 +27,7 @@ Jordnäras interna skyltstudio – ett byggt webbverktyg för att skapa skyltar.
 
 Publicera `index.html`, `favicon.svg` och hela `assets/` tillsammans. Ingen serverkod eller installation krävs. Befintliga typsnitt och illustrationer ingår.
 
-Detta repo innehåller den byggda appen, inte det ursprungliga kompletta källprojektet. De nya layoutfunktionerna finns läsbart i `assets/studio-updates.js` och anropas från appens befintliga renderare och React-gränssnitt i `assets/index-9lheFqiV.js`. `assets/message-layout.js` laddar typsnitten och hanterar Budskapets typografi. `assets/fixes.css` innehåller gränssnittsjusteringarna. Det gamla DOM-tillägget `customer-update.js` är borttaget.
+Detta repo innehåller den byggda appen, inte det ursprungliga kompletta källprojektet. De nya layoutfunktionerna finns läsbart i `assets/studio-updates.js` och anropas från appens befintliga renderare och React-gränssnitt i `assets/index-skyltstudion-v6.js`. `assets/message-layout.js` laddar typsnitten och hanterar Budskapets typografi. `assets/fixes-v6.css` innehåller gränssnittsjusteringarna. Det gamla DOM-tillägget `customer-update.js` är borttaget.
 
 Vid framtida ombyggnad från ursprungskällan behöver motsvarande integration tas med. Återställ inte en äldre byggversion över dessa filer.
 

@@ -160,6 +160,7 @@ export function renderSign(font, sign, ratio, physicalWidth, assets, path, parse
     }
     const ink = sign.color === '#d2232a' ? '#ffffff' : '#000000';
     if (sign.unit === 'pay-for') {
+      textBlock(sign.product, sx + diameter * .2, sy + diameter * .16, diameter * .6, diameter * .18, 38, ink);
       textBlock(`${sign.quantity} för ${sign.payQuantity}`, sx + diameter * .12, sy + diameter * .36, diameter * .76, diameter * .22, 125, ink, false, 'center', 'one');
       textBlock(`Köp ${sign.quantity} betala för ${sign.payQuantity}`, sx + diameter * .17, sy + diameter * .59, diameter * .66, diameter * .09, 28, ink, false, 'center', 'one');
     } else {
